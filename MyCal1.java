@@ -16,9 +16,9 @@ public class MyCal1 {
         System.out.print("Enter your salary: ");
         salary = tube.nextDouble();
         if (salary > 50000) {
-            System.out.println(salary * 0.9);
+            System.out.println(salary * 0.1);
         } else {
-            System.out.println(salary * 0.95);
+            System.out.println(salary * 0.05);
         }
     }
 }
