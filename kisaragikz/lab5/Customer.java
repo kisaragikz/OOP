@@ -43,7 +43,7 @@ public class Customer extends CheckingAccount{
     }
     public String toString(){
         if(acct == null){
-            return this.firstName+" "+this.lastName+" doesn't have account.";
+            return this.firstName+" "+this.lastName+" doesn’t have account.";
         } else{
             return "The "+this.firstName+" account has "+acct.getBalance()+" baht and "+acct.getCredit()+" credits.";
         }
