@@ -67,6 +67,11 @@ public class MnGUI extends JFrame {
         this.setExtendedState(this.MAXIMIZED_BOTH);
     }
     public static void main(String[] args) {
-        MnGUI frame = new MnGUI();
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        SwingUtilities.invokeLater(() -> { MnGUI frame = new MnGUI(); });
     }
 }
